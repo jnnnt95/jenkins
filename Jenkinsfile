@@ -1,7 +1,9 @@
 pipeline {
     agent any
     tools {}
-    options {}
+    options {
+        timeout([time: 5, unit: 'MINUTES'])
+    }
     stages {
         stage('echoing hello world.') {
             steps {
