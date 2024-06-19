@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    tools {}
     options {
         timeout([time: 5, unit: 'MINUTES'])
     }
